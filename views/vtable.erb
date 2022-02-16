@@ -12,26 +12,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="lesson in lessons">
-        <td>{{ lesson.no }}</td>
-        <td>{{ lesson.title }}</td>
-        <td>{{ lesson.done }}</td>
-      </tr>
-      <!-- <tr>
-        <td>0</td>
-        <td>The Setup</td>
-        <td>Yes</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>An Important Message</td>
-        <td>Yes</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>More Printing</td>
-        <td>Yes</td>
-      </tr> -->
+      <table-item
+        v-for="lesson in lessons"
+        v-bind:key="lesson.id"
+        v-bind:title="lesson.title"
+      ></table-item>
     </tbody>
   </table>
 </div>

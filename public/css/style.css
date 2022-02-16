@@ -1,5 +1,12 @@
+.container {
+  font-family: 'Open Sans', sans-serif;
+  color: #111;
+  font-weight: 300;
+}
+
 .title {
-  color: red;
+  color: orange;
+  font-weight: 400;
 }
 
 .welcome {

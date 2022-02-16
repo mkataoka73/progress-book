@@ -20,7 +20,18 @@
     <tr>
       <td>2</td>
       <td>More Printing</td>
-      <td>Yes</td>
+      <td>
+        <input type="checkbox" name="done" value=""
+        onchange="hello()"
+        >
+      </td>
     </tr>
   </tbody>
 </table>
+
+<script type="text/javascript">
+  function hello(e) {
+    const checked = document.getElementsByName('done');
+    console.log(e);
+  }
+</script>

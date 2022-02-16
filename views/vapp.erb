@@ -1,0 +1,37 @@
+<div id="example-1">
+  <li v-for="(item, index) in items" :key="item.message">
+    {{ parentMessage }} - {{ index }} - {{ item.message }}
+  </li>
+</div>
+
+<h2>V-for</h2>
+<div id="v-for-object" class="demo">
+  <h3>Iterating object values</h3>
+  <li v-for="(value, name, index) in person">
+    {{ name }}: {{ value }}
+  </li>
+</div>
+
+<div id="filter" class="demo">
+  <h3>Filtering items</h3>
+  <li v-for="n in evenNumbers">
+    {{ n }}
+  </li>
+</div>
+
+<div id="v-for-range" class="demo">
+  <h3>With Range</h3>
+  <span v-for="n in 10">{{ n }}</span>
+</div>
+
+<div id="v-on-click">
+  <h3>Fire Function On Click</h3>
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+
+<div id="on-click-2">
+  <h3>Alert on Click</h3>
+  <p>{{ message }}</p>
+  <button v-on:click="sayHello">Say Hello</button>
+</div>
